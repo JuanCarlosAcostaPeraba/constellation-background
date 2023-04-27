@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+header {
+	background: linear-gradient(to bottom, #000, #00000092);
+	padding: 1em;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	color: #fff;
+	text-decoration: underline #fff 3px;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background: #00000092;
+	color: #fff;
+	height: 90vh;
+}
+
+.hero .logo img {
+	width: 30%;
+	margin: 0 auto;
+}
+
+.btn {
+	display: inline-block;
+	padding: 1em 2em;
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.hero canvas {
+	position: absolute;
+	background: #000000;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+main {
+	margin: 3em auto;
+	padding: 1em;
+}
