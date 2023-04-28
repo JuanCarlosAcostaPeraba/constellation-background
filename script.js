@@ -15,8 +15,8 @@ const Constellation = (canvas, options) => {
 			x: 0,
 			y: 0
 		},
-		width: window.innerWidth,
-		height: window.innerHeight,
+		width: canvas.offsetWidth,
+		height: canvas.offsetHeight,
 		velocity: 0.1,
 		length: 100,
 		distance: 120,
@@ -154,11 +154,6 @@ const Constellation = (canvas, options) => {
 		this.loop(this.createStars)
 		this.bind()
 	}
-
-	window.addEventListener('resize', () => {
-		config.width = window.innerWidth
-		config.height = window.innerHeight
-	})
 
 	return this.init()
 }
