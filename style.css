@@ -5,7 +5,8 @@ body {
 }
 
 header {
-	background: linear-gradient(to bottom, #000, #00000092);
+	position: relative;
+	background: #000000;
 	padding: 1em;
 }
 
@@ -29,13 +30,14 @@ header nav ul li a:hover {
 }
 
 .hero {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	background: #00000092;
 	color: #fff;
-	height: 90vh;
+	height: 100vh;
 }
 
 .hero .logo img {
@@ -59,7 +61,7 @@ header nav ul li a:hover {
 	left: 0;
 	z-index: -1;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 
 main {
